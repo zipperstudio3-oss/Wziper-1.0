@@ -1,0 +1,20 @@
+WZIPER WINDOWS BUILD
+====================
+
+This package contains source code, a new white/green icon, and an Inno Setup
+installer wizard script. A precompiled Windows EXE is NOT included because
+this build environment has no Rust toolchain or Windows compiler.
+
+FASTEST WAY TO GET THE EXE + INSTALLER:
+1. Upload the Wziper folder contents to a GitHub repository.
+2. Open the repository's Actions tab.
+3. Select "Build Wziper for Windows".
+4. Click "Run workflow".
+5. Download the Wziper-Windows-x64 artifact from the completed run.
+   It contains Wziper.exe and Wziper-Setup-0.1.0.exe.
+
+LOCAL BUILD:
+- Install Rust (https://rustup.rs/)
+- Install Inno Setup 6
+- Run .\build.ps1 in PowerShell
+- Compile installer\Wziper.iss in Inno Setup Compiler
